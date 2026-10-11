@@ -44,6 +44,11 @@
 }
 
 * { box-sizing: border-box; }
+/* base reset so the standalone file behaves like the preview */
+html, body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+@media (min-width: 861px) { .drawer { display: none !important; } }
 body { background: var(--bg); color: var(--ink); font: 400 1.08rem/1.7 var(--serif); }
 .wrap { max-width: 1168px; margin-inline: auto; padding-inline: 24px; }
 a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 4px; text-decoration-thickness: 1.5px; }
